@@ -16,4 +16,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Month Year Picker"
 include ':app'
-include ':monthyearpicker'
+enableFeaturePreview "STABLE_CONFIGURATION_CACHE"
+include ':MonthYearPicker'

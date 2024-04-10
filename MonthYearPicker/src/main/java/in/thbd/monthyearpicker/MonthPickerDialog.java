@@ -1,4 +1,4 @@
-package in.thbd.monthyearpicker.Picker;
+package in.thbd.monthyearpicker;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -11,11 +11,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.DatePicker;
 import android.widget.DatePicker.OnDateChangedListener;
-
 import androidx.annotation.IntRange;
-
 import java.util.Calendar;
-
 import in.thbd.monthyearpicker.R;
 
 public class MonthPickerDialog extends AlertDialog implements OnClickListener, OnDateChangedListener {

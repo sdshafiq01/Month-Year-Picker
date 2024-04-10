@@ -1,4 +1,4 @@
-package in.thbd.monthyearpicker.Picker;
+package in.thbd.monthyearpicker;
 
 import android.content.Context;
 import android.content.res.Resources;

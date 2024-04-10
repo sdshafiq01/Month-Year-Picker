@@ -1,4 +1,4 @@
-package in.thbd.monthyearpicker.Picker;
+package in.thbd.monthyearpicker;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -38,10 +38,6 @@ class MonthPickerView extends FrameLayout {
     OnCancel _onCancel;
     private String[] _monthNames;
 
-    /*private static final int[] ATTRS_TEXT_COLOR = new int[] {
-            com.android.internal.R.attr.textColor};
-    private static final int[] ATTRS_DISABLED_ALPHA = new int[] {
-            com.android.internal.R.attr.disabledAlpha};*/
 
     public MonthPickerView(Context context) {
         this(context, null);
