@@ -4,6 +4,7 @@
     android:id="@+id/header"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#448AFF"
     android:gravity="center"
     android:orientation="vertical"
     android:paddingTop="16dp">
@@ -14,35 +15,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="16sp"
-        android:visibility="gone"
-        android:textColor="@android:color/primary_text_dark_nodisable"/>
+        android:text="title"
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:paddingBottom="20dp">
 
         <TextView
             android:id="@+id/month"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingLeft="30dp"
             android:paddingRight="10dp"
-            tools:text="@string/label_month"
+            android:textColor="@android:color/primary_text_dark_nodisable"
             android:textSize="35sp"
-            android:textColor="@android:color/primary_text_dark_nodisable"/>
+            tools:text="@string/label_month" />
 
         <TextView
             android:id="@+id/year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="30dp"
-            tools:text="@string/label_year"
+            android:textColor="@android:color/primary_text_dark_nodisable"
             android:textSize="35sp"
-            android:textColor="@android:color/primary_text_dark_nodisable"/>
+            tools:text="@string/label_year" />
     </LinearLayout>
 </LinearLayout>

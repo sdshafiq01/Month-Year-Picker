@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +15,8 @@ import android.widget.DatePicker;
 import android.widget.DatePicker.OnDateChangedListener;
 import androidx.annotation.IntRange;
 import java.util.Calendar;
+import java.util.Objects;
+
 import in.thbd.monthyearpicker.R;
 
 public class MonthPickerDialog extends AlertDialog implements OnClickListener, OnDateChangedListener {
@@ -43,10 +47,15 @@ public class MonthPickerDialog extends AlertDialog implements OnClickListener, O
                 WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
                 if (getWindow() != null) {
                     lp.copyFrom(getWindow().getAttributes());
+//                    getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+//                    getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+
+
                     lp.width = (int) (this.getContext().getResources().getDisplayMetrics().widthPixels * 0.94);
                     lp.height = (int) (this.getContext().getResources().getDisplayMetrics().heightPixels * 0.94);
                     // show the dialog as per super implementation
                     super.show();
+                    getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
                     // now dialog attached to window so apply the size
                     getWindow().setLayout(lp.width, lp.height);
                 }
@@ -57,6 +66,7 @@ public class MonthPickerDialog extends AlertDialog implements OnClickListener, O
             }
         }
         super.show();
+        Objects.requireNonNull(getWindow()).setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
     }
 
     /**
@@ -76,6 +86,8 @@ public class MonthPickerDialog extends AlertDialog implements OnClickListener, O
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(R.layout.month_picker_dialog, null);
+//        view.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//        view.setBackgroundResource(android.R.color.transparent);
 
         setView(view);
         _monthPicker = (MonthPickerView) view.findViewById(R.id.monthPicker);

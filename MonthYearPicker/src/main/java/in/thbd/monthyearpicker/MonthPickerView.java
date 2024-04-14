@@ -163,9 +163,11 @@ class MonthPickerView extends FrameLayout {
                 monthBgSelectedColor = context.getResources().getIdentifier("colorAccent",
                         "attr", context.getPackageName());
             }
+
             TypedValue outValue = new TypedValue();
             context.getTheme().resolveAttribute(monthBgSelectedColor, outValue, true);
             monthBgSelectedColor = outValue.data;
+
         }
 
         HashMap<String, Integer> map = new HashMap();

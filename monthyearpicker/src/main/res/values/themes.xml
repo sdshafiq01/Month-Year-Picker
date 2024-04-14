@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MonthYearPicker" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MonthYearPicker" parent="Theme.MonthYearPicker">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
@@ -9,16 +9,16 @@
 
     <style name="MonthPickerDialogStyle" >
         <!-- Customize month picker theme here. -->
-        <!-- <item name="monthBgColor">#FFFFFF</item>
-         <item name="monthBgSelectedColor">#FF4081</item>
+         <item name="monthBgColor">#FFFFFF</item>
+         <item name="monthBgSelectedColor">#448AFF</item>
          <item name="monthFontColorSelected">#ffffff</item>
          <item name="monthFontColorNormal">#000000</item>
          <item name="monthFontColorDisabled">#33000000</item>
 
-         <item name="headerBgColor">#FF4081</item>
+         <item name="headerBgColor">#448AFF</item>
          <item name="headerFontColorSelected">#ffffff</item>
          <item name="headerFontColorNormal">#85ffffff</item>
-         <item name="headerTitleColor">#ffffff</item>-->
+         <item name="headerTitleColor">#ffffff</item>
     </style>
 
 
